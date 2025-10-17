@@ -10,17 +10,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="#">☕</a>
+            <ul class="nav-links">
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Ask Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="container">
-        <div class="content">
+        <section class="hero">
             <h1>Coffee Making Game</h1>
             <p class="subtitle">Master the art of brewing the perfect cup</p>
-            <div class="divider"></div>
-            <p class="description">
-                A minimalist simulation game where precision meets passion. 
-                Learn the intricate process of coffee brewing, from bean selection 
-                to the perfect pour, all in a beautifully designed experience.
-            </p>
-        </div>
+
+            <div class="search-wrap">
+                <input class="search" type="search" placeholder="Know what you want? Search it!">
+                <button class="search-btn" aria-label="Search">🔍</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <article class="feature">
+                <!-- Kettle (hand-drawn sketch) -->
+                <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <style> .s{fill:none;stroke:var(--indigo);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+                    </defs>
+                    <ellipse cx="100" cy="152" rx="56" ry="12" fill="rgba(43,43,143,0.06)"/>
+                    <path class="s" d="M52 140 C44 110 48 80 70 70 C92 60 130 60 150 72 C168 82 164 110 150 140" />
+                    <path class="s" d="M150 72 C162 76 176 74 188 66 C192 62 192 56 188 52 C176 40 158 36 142 40" />
+                    <path class="s" d="M56 70 C40 64 36 48 60 40 C84 32 118 34 136 44" />
+                    <path class="s" d="M58 72 L36 62" stroke-opacity="0.9"/>
+                    <path class="s" d="M142 48 L170 36" stroke-opacity="0.9"/>
+                </svg>
+                <button class="outline">Explore</button>
+                <p class="feature-desc">Browse recipes.</p>
+            </article>
+
+            <article class="feature">
+                <!-- Pour-over / bowl (sketch) -->
+                <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <style> .s2{fill:none;stroke:var(--indigo);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+                    </defs>
+                    <ellipse cx="100" cy="140" rx="58" ry="14" fill="rgba(43,43,143,0.06)"/>
+                    <path class="s2" d="M44 140 C60 94 140 94 156 140" />
+                    <path class="s2" d="M56 128 C74 98 126 98 144 128" stroke-dasharray="3 6"/>
+                    <path class="s2" d="M72 110 C90 100 110 100 128 110" />
+                </svg>
+                <button class="outline">Explore by Region</button>
+                <p class="feature-desc">Get to know regional brewing styles.</p>
+            </article>
+
+            <article class="feature">
+                <!-- Stacked cups (sketch) -->
+                <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <style> .s3{fill:none;stroke:var(--indigo);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+                    </defs>
+                    <path class="s3" d="M60 60 q40 -18 80 4" />
+                    <path class="s3" d="M70 86 q30 -14 60 0" />
+                    <path class="s3" d="M80 112 q20 -10 40 0" />
+                    <path class="s3" d="M48 72 C54 68 64 66 74 70" stroke-opacity="0.9"/>
+                    <ellipse cx="100" cy="130" rx="44" ry="10" fill="rgba(43,43,143,0.04)"/>
+                </svg>
+                <button class="outline">Create a Set Menu</button>
+                <p class="feature-desc">Share and enjoy coffee with friends.</p>
+            </article>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Make us a part of your lifestyle</p>
+            <div class="footer-logo">jia mi</div>
+            <p>A taste of home in every cup</p>
+        </div>
+    </footer>
 </body>
 </html>
